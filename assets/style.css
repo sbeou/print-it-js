@@ -133,11 +133,11 @@ header {
 #banner .arrow:hover {
 	transform: scale(1.2);
 }
-#banner .arrow_left {
+#banner #arrow_left {
 	left: 10px;
 	background-image: url('./images/arrow_left.png');
 }
-#banner .arrow_right {
+#banner #arrow_right {
 	right: 10px;
 	background-image: url("./images/arrow_right.png");
 }
