@@ -19,8 +19,6 @@ const slides = [
 const dots = document.getElementById("dots");
 for (let i = 0; i < slides.length; i++) {
 	dots.innerHTML += "<li class='dot'></li>";
-	const dot = document.createElement("li");
-      dot.classList.add("dot");
 }
 const dot = document.getElementsByClassName('dot');
 let i = 0;
@@ -28,9 +26,7 @@ dot[i].classList.add("dot_selected");
 function sliderImg(i) {
 	document.querySelector("#banner > img").src=`./assets/images/slideshow/${slides[i].image}`;
 	document.querySelector("#banner > p").innerHTML = slides[i].tagLine;
-	if (dot[i]) {
-		dot[i].classList.add("dot_selected");
-	}
+	dot[i].classList.add("dot_selected");
 }
 document.getElementById("arrow_left").addEventListener('click', function() {
 	if(i > 0) {
