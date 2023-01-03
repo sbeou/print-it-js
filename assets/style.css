@@ -142,7 +142,7 @@ header {
 	background-image: url("./images/arrow_right.png");
 }
 /* Gestion des points du carrousel */
-.dots {
+#dots {
 	position: absolute;
 	bottom: 40px;
 	display: flex;
